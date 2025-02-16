@@ -1,0 +1,107 @@
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "5ce76dc"
+hash = "52e5f5c602962e7cbf874da28f52ba45"
+
+[[plugin.deps]]
+use = "Reledia/miller"
+rev = "40e0265"
+hash = "2d6d77583162aaf0a599e7a3091b5878"
+
+[[plugin.deps]]
+use = "Reledia/hexyl"
+rev = "39d3d4e"
+hash = "dd624cbaff94af65f39fd86bc57b340"
+
+[[plugin.deps]]
+use = "lpanebr/yazi-plugins:first-non-directory"
+rev = "ca18a2c"
+hash = "5c20ffa5171dab34042e03d273dddc5b"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "02d18be"
+hash = "ea24edab4a62c94dbd205adfb6f2c08d"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "3f7c51f"
+hash = "e11b980e5635f0fbabd80931b1a1347e"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "60b24af"
+hash = "ee025be766240cc98e671754ac836da3"
+
+[[plugin.deps]]
+use = "dawsers/fuse-archive"
+rev = "a58327c"
+hash = "6a6d24880ce7666048fb81ad758c48d3"
+
+[[plugin.deps]]
+use = "boydaihungst/fuse-archive"
+rev = "f17823a"
+hash = "aba3c54f978ff1d6528f3b80a7fbd2f7"
+
+[[plugin.deps]]
+use = "GianniBYoung/rsync"
+rev = "3f431aa"
+hash = "1854a5a30d23e84bc8df24700f27957b"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "d1cd0a3"
+hash = "d1fee6d0f74cb52d4e031dc6b9207f31"
+
+[[plugin.deps]]
+use = "Ape/mediainfo"
+rev = "df17c4f"
+hash = "74c2b0063f30c6b4e4ede533f9ca03f2"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "d0be054"
+hash = "c2af4afa521e307ef81ac038077f38f9"
+
+[[plugin.deps]]
+use = "boydaihungst/file-extra-metadata"
+rev = "dc8e790"
+hash = "c52ba4aed37df0772b6f699e135e72f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "8945e54"
+hash = "771f18427fb75fb19990ce602bb322f4"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "b23e3a4"
+hash = "98e5f5af3efd3ba8bc2db0720187cc83"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "9328205"
+hash = "3e51d1fd8a2e481fcfa8eab1251d1c5f"
+
+[[plugin.deps]]
+use = "imsi32/yatline-githead"
+rev = "a6377a8"
+hash = "4f1a71eff1dd8f245ae2e3985e3e2f91"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-created-time"
+rev = "3c129d6"
+hash = "695b2441885359206812dcd4e810633c"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-modified-time"
+rev = "17a3077"
+hash = "d5f86be5c73c480afecf99c1ca381d04"
+
+[[plugin.deps]]
+use = "MasouShizuka/projects"
+rev = "ac57d0a"
+hash = "9f45b6c6a55d9992ad80091ab8112c24"
+
+[flavor]
+deps = []

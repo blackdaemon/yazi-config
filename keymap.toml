@@ -1,0 +1,56 @@
+[manager]
+prepend_keymap = [
+# Spotting
+{ on = "<Tab>", run = "spot", desc = "Spot hovered file" },
+
+{ on   = [ ".", "s" ], run  = "plugin what-size", desc = "Calc size of selection or cwd" },
+{ on   = [ ".", "." ], run  = "hidden", desc = "Toggle hidden files" },
+  
+{ on   = "e", run  = '''shell '${EDITOR:-vi} "$0"' --block''', desc = "Open shell here" },
+
+{ on   = ["g", "y"], run  = 'cd ~/.config/yazi', desc = "Goto ~/.config/yazi" },
+{ on   = ["g", "r"], run  = 'cd ~/gitrepos', desc = "Goto ~/gitrepos" },
+{ on   = ["g", "v"], run  = 'cd ~/Videos', desc = "Goto ~/Videos" },
+{ on   = ["g", "w"], run  = 'cd ~/Workspace', desc = "Goto ~/Workspace" },
+
+{ on   = "!", run  = 'shell "$SHELL" --block', desc = "Open shell here" },
+{ on   = "t", run  = "plugin smart-tab", desc = "Create a tab and enter the hovered directory" },
+{ on   = "<home>", run  = "plugin first-non-directory", desc = "Jumps to the first file" },
+{ on   = "2", run  = "plugin smart-switch 1", desc = "Switch or create tab 2" }, 
+{ on   = "3", run  = "plugin smart-switch 2", desc = "Switch or create tab 3" },
+{ on   = "4", run  = "plugin smart-switch 1", desc = "Switch or create tab 4" },
+{ on   = "5", run  = "plugin smart-switch 1", desc = "Switch or create tab 5" },
+{ on   = "6", run  = "plugin smart-switch 1", desc = "Switch or create tab 6" },
+{ on   = "7", run  = "plugin smart-switch 1", desc = "Switch or create tab 7" },
+{ on   = "8", run  = "plugin smart-switch 1", desc = "Switch or create tab 8" },
+{ on   = "9", run  = "plugin smart-switch 1", desc = "Switch or create tab 9" },
+{ on   = "0", run  = "plugin smart-switch 1", desc = "Switch or create tab 0" },
+
+{ on = [ "u", "a" ], run = "plugin yamb save", desc = "Add bookmark" },
+{ on = [ "u", "g" ], run = "plugin yamb jump_by_key", desc = "Jump bookmark by key" },
+{ on = [ "u", "G" ], run = "plugin yamb jump_by_fzf", desc = "Jump bookmark by fzf" },
+{ on = [ "u", "d" ], run = "plugin yamb delete_by_key", desc = "Delete bookmark by key" },
+{ on = [ "u", "D" ], run = "plugin yamb delete_by_fzf", desc = "Delete bookmark by fzf" },
+{ on = [ "u", "A" ], run = "plugin yamb delete_all", desc = "Delete all bookmarks" },
+{ on = [ "u", "r" ], run = "plugin yamb rename_by_key", desc = "Rename bookmark by key" },
+{ on = [ "u", "R" ], run = "plugin yamb rename_by_fzf", desc = "Rename bookmark by fzf" },
+
+{ on = [ "c", "a" ], run  = "plugin compress", desc = "Archive selected files" },
+
+{ on   = [ "<right>" ], run = "plugin fuse-archive -- mount", desc = "Enter or Mount selected archive" },
+{ on   = [ "<left>" ], run = "plugin fuse-archive -- unmount", desc = "Leave or Unmount selected archive" },
+
+{ on = [ "R", "m" ], run  = "plugin rsync osmcv@osmcv:/mnt/wd_black/Movies", desc = "rsync to osmcv Movies" },
+{ on = [ "R", "t" ], run  = "plugin rsync osmcv:/mnt/wd_black/TV\\ Shows", desc = "rsync to osmcv TV Shows" },
+
+{ on = [ "P", "s" ], run = "plugin projects save", desc = "Save current project" },
+{ on = [ "P", "l" ], run = "plugin projects load", desc = "Load project" },
+{ on = [ "P", "P" ], run = "plugin projects load_last", desc = "Load last project" },
+{ on = [ "q" ], run = "plugin projects quit", desc = "Save last project and exit the process" },
+
+
+{ on   = [ "F" ], run  = 'search_do --via=fd --args="-d 3 -E .git"', desc = "Switch to the flat view with a max depth of 3" },
+]
+
+append_keymap = [
+]
