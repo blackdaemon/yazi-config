@@ -4,9 +4,11 @@ require("git"):setup()
 --require("starship"):setup()
 
 local gruvbox_theme = require("yatline-gruvbox"):setup("dark") -- or "light"
-require("yatline"):setup({
-	theme = gruvbox_theme,
 
+require("yatline"):setup({
+	--theme = gruvbox_theme,
+
+	--[[
 	section_separator = { open = "", close = "" },
 	part_separator = { open = "", close = "" },
 	inverse_separator = { open = "", close = "" },
@@ -30,7 +32,18 @@ require("yatline"):setup({
 
 	tab_width = 20,
 	tab_use_inverse = false,
+	]]
 
+	filter = { 
+		fg = "brightyellow", 
+		--search_label = "search", 
+		--filter_label = "filter", 
+--		flatten_label = "flatten", 
+		--no_filter_label = "no filter" 
+	},
+
+	unfiltered_total = { icon = "", fg = "white" },
+	filtered_total = { icon = "", fg = "brightyellow" },
 	selected = { icon = "󰻭", fg = "yellow" },
 	copied = { icon = "", fg = "green" },
 	cut = { icon = "", fg = "red" },
@@ -55,7 +68,7 @@ require("yatline"):setup({
 			},
 			section_b = {
 				{type = "coloreds", custom = false, name = "githead" },
-        			--{type = "string", custom = false, name = "tab_path", params = {{ hide_filter = true }} },
+        			{type = "string", custom = false, name = "tab_path", params = {{ hide_filter = true }} },
         			{type = "coloreds", custom = false, name = "filter" },
 			},
 			section_c = {
@@ -106,7 +119,6 @@ require("yatline"):setup({
 require("yatline-githead"):setup()
 require("yatline-created-time"):setup()
 require("yatline-modified-time"):setup()
-
 
 require("projects"):setup({
     save = {
